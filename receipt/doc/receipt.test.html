@@ -1,0 +1,92 @@
+<html><head><style>li {
+  list-style: none;
+  margin: 10px;
+}a:link {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+}a:visited {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+}a:hover {
+  text-decoration: none;
+  color: #B9D9C2;
+  font-weight: bold;
+}.navigation {
+  background-color: #2F2933;
+}.left {
+  float: left;
+}h1 {
+  text-align: center;
+}body {
+  background-color: #F9F9F9;
+}.body {
+  width: 600px;
+  margin: 50px 10px 20px 10px;
+}.docstring {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #2F2933;
+  border-width: 1px 0 1px 0;
+  padding: 10px;
+  margin: 20px;
+}.tags {
+  background-color: #FFFFFF;
+  padding-left: 40px;
+}.private {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #FF1200;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.dynamic {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #08A400;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.variable {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #A47A00;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.function {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #A40094;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.macro {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #FFE900;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.declared {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #000000;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.header {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #B9D9C2;
+  border-width: 0 0 2px 0;
+  font-size: large;
+  color: #2F2933;
+  font-weight: bold;
+  padding: 10px 0 5px 10px;
+  margin: 0 0 10px 0;
+}</style></head><body><h1>(ns receipt.test)</h1><table><tr><td class="left"><table class="navigation"><tr><td class="left"><ul><li><a href="#"><b><u>Namespaces</u></b></a></li><li><a href="receipt.core.html">receipt.core</a></li><li><a href="receipt.test.html">receipt.test</a></li></ul></td><td><ul><li><a href="#"><b><u>API</u></b></a></li><li><a href="#*dyn*">*dyn*</a></li><li><a href="#abc-123">abc-123</a></li><li><a href="#abc-456">abc-456</a></li><li><a href="#my-declared">my-declared</a></li><li><a href="#my-declared">my-declared</a></li><li><a href="#my-fn">my-fn</a></li><li><a href="#my-var">my-var</a></li><li><a href="#priv-var">priv-var</a></li><li><a href="#private">private</a></li></ul></td></tr></table></td><td><div class="body"><div><div class="header" id="*dyn*" name="*dyn*">*dyn*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="abc-123" name="abc-123">abc-123<span class="tags"><a class="attribute macro">macro</a></span></div>
+<p>(abc-123 x)</p><p>(abc-123 x y)</p><p>(abc-123 x y & z)</p></div><div><div class="header" id="abc-456" name="abc-456">abc-456<span class="tags"><a class="attribute private">private</a> <a class="attribute macro">macro</a></span></div>
+<pre class="docstring">docstring</pre><p>(abc-456)</p><p>(abc-456 x)</p><p>(abc-456 x y)</p></div><div><div class="header" id="my-declared" name="my-declared">my-declared<span class="tags"><a class="attribute declared">declared</a> <a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="my-declared" name="my-declared">my-declared<span class="tags"><a class="attribute declared">declared</a> <a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="my-fn" name="my-fn">my-fn<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(my-fn)</p><p>(my-fn x)</p></div><div><div class="header" id="my-var" name="my-var">my-var<span class="tags"><a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="priv-var" name="priv-var">priv-var<span class="tags"><a class="attribute private">private</a> <a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="private" name="private">private<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(private)</p></div></div></td></tr></table></body></html>

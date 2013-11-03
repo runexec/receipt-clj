@@ -1,0 +1,122 @@
+<html><head><style>li {
+  list-style: none;
+  margin: 10px;
+}a:link {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+}a:visited {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+}a:hover {
+  text-decoration: none;
+  color: #B9D9C2;
+  font-weight: bold;
+}.navigation {
+  background-color: #2F2933;
+}.left {
+  float: left;
+}h1 {
+  text-align: center;
+}body {
+  background-color: #F9F9F9;
+}.body {
+  width: 600px;
+  margin: 50px 10px 20px 10px;
+}.docstring {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #2F2933;
+  border-width: 1px 0 1px 0;
+  padding: 10px;
+  margin: 20px;
+}.tags {
+  background-color: #FFFFFF;
+  padding-left: 40px;
+}.private {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #FF1200;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.dynamic {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #08A400;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.variable {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #A47A00;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.function {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #A40094;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.macro {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #FFE900;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.declared {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #000000;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.header {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #B9D9C2;
+  border-width: 0 0 2px 0;
+  font-size: large;
+  color: #2F2933;
+  font-weight: bold;
+  padding: 10px 0 5px 10px;
+  margin: 0 0 10px 0;
+}</style></head><body><h1>(ns receipt.core)</h1><table><tr><td class="left"><table class="navigation"><tr><td class="left"><ul><li><a href="#"><b><u>Namespaces</u></b></a></li><li><a href="receipt.core.html">receipt.core</a></li><li><a href="receipt.test.html">receipt.test</a></li></ul></td><td><ul><li><a href="#"><b><u>API</u></b></a></li><li><a href="#*builder*">*builder*</a></li><li><a href="#*css*">*css*</a></li><li><a href="#*doc-dir*">*doc-dir*</a></li><li><a href="#*namespaces*">*namespaces*</a></li><li><a href="#-fn?">-fn?</a></li><li><a href="#-main">-main</a></li><li><a href="#build-namespace">build-namespace</a></li><li><a href="#build-var">build-var</a></li><li><a href="#css-str-&amp;gt;hiccup-element">css-str-&gt;hiccup-element</a></li><li><a href="#declared">declared</a></li><li><a href="#declared?">declared?</a></li><li><a href="#dynamic?">dynamic?</a></li><li><a href="#ensure-doc-path!">ensure-doc-path!</a></li><li><a href="#filter-ns">filter-ns</a></li><li><a href="#functions">functions</a></li><li><a href="#generate-html!">generate-html!</a></li><li><a href="#macro?">macro?</a></li><li><a href="#macros">macros</a></li><li><a href="#namespaces">namespaces</a></li><li><a href="#ns-&amp;gt;save-path">ns-&gt;save-path</a></li><li><a href="#ns-save-file-coll">ns-save-file-coll</a></li><li><a href="#path-&amp;gt;ns">path-&gt;ns</a></li><li><a href="#path-&amp;gt;ns-coll">path-&gt;ns-coll</a></li><li><a href="#private?">private?</a></li><li><a href="#read-source-path">read-source-path</a></li><li><a href="#theme-light">theme-light</a></li><li><a href="#var-&amp;gt;args-hiccup">var-&gt;args-hiccup</a></li><li><a href="#var-&amp;gt;css-map">var-&gt;css-map</a></li><li><a href="#var-&amp;gt;hiccup-header">var-&gt;hiccup-header</a></li><li><a href="#var-&amp;gt;str">var-&gt;str</a></li><li><a href="#variable?">variable?</a></li><li><a href="#variables">variables</a></li><li><a href="#vars-&amp;gt;args-hiccup">vars-&gt;args-hiccup</a></li><li><a href="#vars-&amp;gt;css-map">vars-&gt;css-map</a></li></ul></td></tr></table></td><td><div class="body"><div><div class="header" id="*builder*" name="*builder*">*builder*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+<pre class="docstring">controls the look of the html. theme-light fn is default</pre></div><div><div class="header" id="*css*" name="*css*">*css*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="*doc-dir*" name="*doc-dir*">*doc-dir*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+<pre class="docstring">default value doc/</pre></div><div><div class="header" id="*namespaces*" name="*namespaces*">*namespaces*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+<pre class="docstring">holds namespace seq</pre></div><div><div class="header" id="-fn?" name="-fn?">-fn?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(-fn? meta)</p></div><div><div class="header" id="-main" name="-main">-main<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">Saves docs to doc-dir path. TODO add support for the custom themes.</pre><p>(-main)</p><p>(-main doc-dir)</p><p>(-main doc-dir theme-or-css-path)</p></div><div><div class="header" id="build-namespace" name="build-namespace">build-namespace<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Controls the final layout of each namespace</pre><p>(build-namespace -ns)</p></div><div><div class="header" id="build-var" name="build-var">build-var<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Responsible for the format of each var's HTML display</pre><p>(build-var v)</p></div><div><div class="header" id="css-str-&amp;gt;hiccup-element" name="css-str-&amp;gt;hiccup-element">css-str-&gt;hiccup-element<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Converts css string to &lt;a class=&quot;attribute&quot;&gt;attribute&lt;/a&gt;</pre><p>(css-str-&gt;hiccup-element s)</p></div><div><div class="header" id="declared" name="declared">declared<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all declared in namespace</pre><p>(declared -ns)</p></div><div><div class="header" id="declared?" name="declared?">declared?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(declared? meta)</p></div><div><div class="header" id="dynamic?" name="dynamic?">dynamic?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(dynamic? meta)</p></div><div><div class="header" id="ensure-doc-path!" name="ensure-doc-path!">ensure-doc-path!<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Test if *doc-dir* exists else create</pre><p>(ensure-doc-path!)</p></div><div><div class="header" id="filter-ns" name="filter-ns">filter-ns<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Retrieves all vars from a ns</pre><p>(filter-ns ns pred)</p></div><div><div class="header" id="functions" name="functions">functions<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all functions in namespace</pre><p>(functions -ns)</p></div><div><div class="header" id="generate-html!" name="generate-html!">generate-html!<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">
+  Looks for lein project file and loads source paths. default config path is project.clj
+  The path binding of *doc-dir* will be created (mkdir) if it doesn't exists.
+  The form binding of *builder* will be called with the ns as the first argument.
+  </pre><p>(generate-html! & [config-path])</p></div><div><div class="header" id="macro?" name="macro?">macro?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(macro? meta)</p></div><div><div class="header" id="macros" name="macros">macros<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all macros in namespace</pre><p>(macros -ns)</p></div><div><div class="header" id="namespaces" name="namespaces">namespaces<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">looks for lein project file and loads source paths. default config path is project.clj</pre><p>(namespaces & [config-path])</p></div><div><div class="header" id="ns-&amp;gt;save-path" name="ns-&amp;gt;save-path">ns-&gt;save-path<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Output file name</pre><p>(ns-&gt;save-path ns)</p></div><div><div class="header" id="ns-save-file-coll" name="ns-save-file-coll">ns-save-file-coll<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">looks for lein project file and loads source paths. default config path is project.clj</pre><p>(ns-save-file-coll & [config-path])</p></div><div><div class="header" id="path-&amp;gt;ns" name="path-&amp;gt;ns">path-&gt;ns<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">source-path is removed from the path which becomes the ns</pre><p>(path-&gt;ns source-path path)</p></div><div><div class="header" id="path-&amp;gt;ns-coll" name="path-&amp;gt;ns-coll">path-&gt;ns-coll<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Takes a source path and runs path-&gt;ns recursively</pre><p>(path-&gt;ns-coll src-path)</p></div><div><div class="header" id="private?" name="private?">private?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(private? meta)</p></div><div><div class="header" id="read-source-path" name="read-source-path">read-source-path<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">looks for lein project file and loads source paths. default config path is project.clj</pre><p>(read-source-path & [config-path])</p></div><div><div class="header" id="theme-light" name="theme-light">theme-light<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">Default builder theme</pre><p>(theme-light -ns)</p></div><div><div class="header" id="var-&amp;gt;args-hiccup" name="var-&amp;gt;args-hiccup">var-&gt;args-hiccup<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Single value version of vars-&gt;args-hiccup</pre><p>(var-&gt;args-hiccup v)</p></div><div><div class="header" id="var-&amp;gt;css-map" name="var-&amp;gt;css-map">var-&gt;css-map<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Single value version of vars-&gt;css-map</pre><p>(var-&gt;css-map v)</p></div><div><div class="header" id="var-&amp;gt;hiccup-header" name="var-&amp;gt;hiccup-header">var-&gt;hiccup-header<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">html safe header for a variables</pre><p>(var-&gt;hiccup-header v)</p></div><div><div class="header" id="var-&amp;gt;str" name="var-&amp;gt;str">var-&gt;str<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Takes a variable and makes it html safe string</pre><p>(var-&gt;str v)</p></div><div><div class="header" id="variable?" name="variable?">variable?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(variable? meta)</p></div><div><div class="header" id="variables" name="variables">variables<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all non-dynamic variables in namespace</pre><p>(variables -ns)</p></div><div><div class="header" id="vars-&amp;gt;args-hiccup" name="vars-&amp;gt;args-hiccup">vars-&gt;args-hiccup<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Takes a variable and returns a html safe version of the argslists meta</pre><p>(vars-&gt;args-hiccup coll)</p></div><div><div class="header" id="vars-&amp;gt;css-map" name="vars-&amp;gt;css-map">vars-&gt;css-map<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<pre class="docstring">Returns returns a map with the var being the key and the value
+   being a css of all matching class attributes.</pre><p>(vars-&gt;css-map coll)</p></div></div></td></tr></table></body></html>

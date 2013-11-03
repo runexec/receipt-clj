@@ -1,0 +1,106 @@
+<html><head><style>a:link {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+  padding: 10px;
+}a:visited {
+  text-decoration: none;
+  color: #F9F9F9;
+  font-weight: bold;
+  padding: 10px;
+}.navigation {
+  background-color: #2F2933;
+  float: left;
+}table {
+  width: 100%;
+}h1 {
+  text-align: center;
+}body {
+  background-color: #F9F9F9;
+}.body {
+  width: 50%;
+  margin: 50px auto 20px auto;
+}.docstring {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #2F2933;
+  border-width: 1px 0 1px 0;
+  padding: 10px;
+  margin: 20px;
+}.tags {
+  background-color: #FFFFFF;
+  padding-left: 40px;
+}.private {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #FF1200;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.dynamic {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #08A400;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.variable {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #A47A00;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.function {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #A40094;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.macro {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #FFE900;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.declared {
+  background-color: #FFFFFF;
+  border-style: dashed;
+  border-color: #000000;
+  border-width: 0 4px 0 4px;
+  padding: 0 15px 0 15px;
+}.header {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #B9D9C2;
+  border-width: 0 0 2px 0;
+  font-size: large;
+  color: #2F2933;
+  font-weight: bold;
+  padding: 10px 0 5px 10px;
+  margin: 0 0 10px 0;
+}</style></head><body><div class="navigation"><p><a href="#*css*">*css*</a></p><p><a href="#*namespaces*">*namespaces*</a></p><p><a href="#-fn?">-fn?</a></p><p><a href="#build">build</a></p><p><a href="#build-namespace">build-namespace</a></p><p><a href="#build-var">build-var</a></p><p><a href="#css-str-&amp;gt;hiccup-element">css-str-&gt;hiccup-element</a></p><p><a href="#declared">declared</a></p><p><a href="#declared?">declared?</a></p><p><a href="#dynamic?">dynamic?</a></p><p><a href="#filter-ns">filter-ns</a></p><p><a href="#functions">functions</a></p><p><a href="#macro?">macro?</a></p><p><a href="#macros">macros</a></p><p><a href="#private?">private?</a></p><p><a href="#theme-light">theme-light</a></p><p><a href="#var-&amp;gt;args-hiccup">var-&gt;args-hiccup</a></p><p><a href="#var-&amp;gt;css-map">var-&gt;css-map</a></p><p><a href="#var-&amp;gt;hiccup-header">var-&gt;hiccup-header</a></p><p><a href="#var-&amp;gt;str">var-&gt;str</a></p><p><a href="#variable?">variable?</a></p><p><a href="#variables">variables</a></p><p><a href="#vars-&amp;gt;args-hiccup">vars-&gt;args-hiccup</a></p><p><a href="#vars-&amp;gt;css-map">vars-&gt;css-map</a></p></div><div class="body"><h1>(ns receipt.core)</h1><div><div class="header" id="*css*" name="*css*">*css*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+</div><div><div class="header" id="*namespaces*" name="*namespaces*">*namespaces*<span class="tags"><a class="attribute dynamic">dynamic</a> <a class="attribute variable">variable</a></span></div>
+<pre class="docstring">if set this value is displayed in namespace navigation</pre></div><div><div class="header" id="-fn?" name="-fn?">-fn?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(-fn? meta)</p></div><div><div class="header" id="build" name="build">build<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">Test doc string
+      abc
+         def</pre><p>(build doc-dir)</p><p>(build doc-dir theme-or-css-path)</p></div><div><div class="header" id="build-namespace" name="build-namespace">build-namespace<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(build-namespace -ns)</p></div><div><div class="header" id="build-var" name="build-var">build-var<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(build-var v)</p></div><div><div class="header" id="css-str-&amp;gt;hiccup-element" name="css-str-&amp;gt;hiccup-element">css-str-&gt;hiccup-element<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">Converts css string to &lt;a class=&quot;attribute&quot;&gt;attribute&lt;/a&gt;</pre><p>(css-str-&gt;hiccup-element s)</p></div><div><div class="header" id="declared" name="declared">declared<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all declared in namespace</pre><p>(declared -ns)</p></div><div><div class="header" id="declared?" name="declared?">declared?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(declared? meta)</p></div><div><div class="header" id="dynamic?" name="dynamic?">dynamic?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(dynamic? meta)</p></div><div><div class="header" id="filter-ns" name="filter-ns">filter-ns<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(filter-ns ns pred)</p></div><div><div class="header" id="functions" name="functions">functions<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all functions in namespace</pre><p>(functions -ns)</p></div><div><div class="header" id="macro?" name="macro?">macro?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(macro? meta)</p></div><div><div class="header" id="macros" name="macros">macros<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all macros in namespace</pre><p>(macros -ns)</p></div><div><div class="header" id="private?" name="private?">private?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(private? meta)</p></div><div><div class="header" id="theme-light" name="theme-light">theme-light<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(theme-light -ns)</p></div><div><div class="header" id="var-&amp;gt;args-hiccup" name="var-&amp;gt;args-hiccup">var-&gt;args-hiccup<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(var-&gt;args-hiccup v)</p></div><div><div class="header" id="var-&amp;gt;css-map" name="var-&amp;gt;css-map">var-&gt;css-map<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(var-&gt;css-map v)</p></div><div><div class="header" id="var-&amp;gt;hiccup-header" name="var-&amp;gt;hiccup-header">var-&gt;hiccup-header<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(var-&gt;hiccup-header v)</p></div><div><div class="header" id="var-&amp;gt;str" name="var-&amp;gt;str">var-&gt;str<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(var-&gt;str v)</p></div><div><div class="header" id="variable?" name="variable?">variable?<span class="tags"><a class="attribute private">private</a> <a class="attribute function">function</a></span></div>
+<p>(variable? meta)</p></div><div><div class="header" id="variables" name="variables">variables<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">returns all non-dynamic variables in namespace</pre><p>(variables -ns)</p></div><div><div class="header" id="vars-&amp;gt;args-hiccup" name="vars-&amp;gt;args-hiccup">vars-&gt;args-hiccup<span class="tags"><a class="attribute function">function</a></span></div>
+<p>(vars-&gt;args-hiccup coll)</p></div><div><div class="header" id="vars-&amp;gt;css-map" name="vars-&amp;gt;css-map">vars-&gt;css-map<span class="tags"><a class="attribute function">function</a></span></div>
+<pre class="docstring">Returns returns a map with the var being the key and the value
+   being a css of all matching class attributes.</pre><p>(vars-&gt;css-map coll)</p></div></div></body></html>
